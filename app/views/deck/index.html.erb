@@ -1,0 +1,9 @@
+<h1>Shuffle Cards Demo</h1>
+
+<p><%= link_to 'Shuffle cards', q: 'shuffle' %></p>
+
+<% @deck.cards.each_slice(13) do |cards| %>
+    <div class="hand">
+      <%= render partial: 'card', collection: cards %>
+    </div>
+<% end %>

@@ -8,6 +8,10 @@ class Card
     validate_parameters
   end
 
+  def to_s
+    "#{ @rank.humanize } of #{ @suit.humanize }"
+  end
+
   private
 
   def validate_parameters
