@@ -1,6 +1,12 @@
 <h1>Shuffle Cards Demo</h1>
 
-<p><%= link_to 'Shuffle cards', q: 'shuffle' %></p>
+<div class="link">
+  <p><%= link_to 'Shuffle cards', q: 'shuffle' %></p>
+</div>
+
+<div class="link">
+  <p><%= link_to 'Reset cards' %></p>
+</div>
 
 <% @deck.cards.each_slice(13) do |cards| %>
     <div class="hand">
